@@ -1,17 +1,4 @@
-export const products = [
-  {
-    name: 'IR Item 1',
-    price: 125
-  },
-  {
-    name: 'IR Item 2',
-    price: 250
-  },
-  {
-    name: 'IR Item 3',
-    price: 350
-  }
-];
+export const products {}
 
 
 /*

@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-
-import { products } from '../products';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-list',
@@ -8,16 +7,51 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 
-export class ProductListComponent {
-  products = products;
+export class ProductListComponent implements OnInit {
+  cart: any = [];
+  totalPrice: number = 0;
+  products: any = [
+    {
+      name: "IR Item 1",
+      price: 125
+    },
+    {
+      name: "IR Item 2",
+      price: 250
+    },
+    {
+      name: "IR Item 3",
+      price: 350
+    }
+  ];
 
-  AddItem() {
-    window.alert('Added!');
+  constructor(private httpClient: HttpClient) {
+    // this.getProductData();
+  }
+
+
+
+  ngOnInit() {
+    // this.getProductData().toPromise().then(result => {
+    //   console.log(result);
+    //   this.products = result;
+    // });
+  }
+
+  getProductData() {
+    // console.log('fetch products');
+    //   return this.httpClient.get('assets/product.json');
+  }
+
+  addIntoCart(product: any) {
+    this.cart.push(product);
+    this.totalPrice = this.totalPrice + product.price;
   }
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
 }
 
 
