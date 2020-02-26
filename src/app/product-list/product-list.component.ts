@@ -51,6 +51,19 @@ export class ProductListComponent implements OnInit {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+  
+  printComponent(cmpName) {
+     let printContents = document.getElementById(cmpName).innerHTML;
+     let originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+
+
 
 }
 
