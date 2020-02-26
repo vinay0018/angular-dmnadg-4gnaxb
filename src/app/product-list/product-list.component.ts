@@ -55,16 +55,15 @@ export class ProductListComponent implements OnInit {
   printComponent(cmpName) {
      let printContents = document.getElementById(cmpName).innerHTML;
      let originalContents = document.body.innerHTML;
-
      document.body.innerHTML = printContents;
-
      window.print();
-
      document.body.innerHTML = originalContents;
 }
 
 
-
+//  deleteItems() {
+//   localStorage.clear(this.totalPrice);
+//  }
 }
 
 

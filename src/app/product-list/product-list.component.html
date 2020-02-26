@@ -29,22 +29,27 @@
 
 <div class="container" id="component1">
 
-<br>
-
 <h2>Cart Items</h2>
 <br>
 
-<div *ngFor="let cartItem of cart">
+<div *ngFor="let cartItem of cart" >
   <br>
   <span>
     {{cartItem.name}} : {{cartItem.price}}
-    </span>
+     </span>
     <br>
 </div>
 <br>
  <div> Total Price: Rs {{totalPrice}} </div>
-<button (click)="printComponent('component1')">Print</button>
 
+<button (click)="printComponent('component1')">Print</button>
+<br>
+
+
+<div>
+<button onclick="deleteItems()">Should wite Delete items code here</button>
+<br>
+</div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
