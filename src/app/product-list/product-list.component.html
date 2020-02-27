@@ -1,3 +1,5 @@
+
+
 <h2>Products</h2>
 <div *ngFor="let product of products">
 
@@ -29,20 +31,27 @@
 
 
 <div id="cartInfo">
-
-  <h2>Cart Items</h2>
-  <br>
-
-
+ <div>
+      SREE ENTERPRISES<br>
+      L5 Food Court, L&T MALL<br>
+      MOOSARAMBAGH,HYDERABAD-500036<br>
+      Ph No: +91-9030957956<br>
+      GST*:_ 36DVUPK1405D1ZN<br>
+      ----------------------------------------<br>
+    </div>
+  <h2>ItemName     Price</h2>
+  
   <div *ngFor="let cartItem of cart" >
     <br>
     <div>
-      {{cartItem.name}} : {{cartItem.price}}
+      {{cartItem.name}} : Rs {{cartItem.price}}
     </div>
-    <br>
   </div>
-  <br>
-  <div> Total Price: Rs {{totalPrice}} </div>
+ <br>
+   
+<div> Total Price: Rs {{totalPrice}} </div>
+-----------Thankyou-------------<br>
+--------Please Visit Again---------
 </div>
   <button (click)="printComponent('cartInfo')">Print</button>
   <br>
