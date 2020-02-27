@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from './product-service.service';
+import {ProductService} from './product-service.service';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
+  providers: [ProductService]
 })
 
 export class ProductListComponent implements OnInit {
@@ -14,8 +15,6 @@ export class ProductListComponent implements OnInit {
 
   constructor(private service: ProductService) {
   }
-
-
 
   ngOnInit() {
     this.service.getProductList().toPromise().then(res => {
