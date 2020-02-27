@@ -1,16 +1,17 @@
 <h2>Products</h2>
 <div *ngFor="let product of products">
 
-    <span>
+  <span>
       <a [title]="product.name + 'details'">
       {{ product.name }}
       </a>
   </span>
 
- <span> 
-    <a [title]="product.price + 'Rs'">
-      {{ product.price }}
-      </a></span>
+  <span> 
+      <a [title]="product.price + 'Rs'">
+        {{ product.price }}
+        </a>
+  </span>
 
   <div>
     <button (click)="addIntoCart(product)">
@@ -27,31 +28,24 @@
 <br><br>
 
 
-<div class="container" id="component1">
+<div id="cartInfo">
 
-<h2>Cart Items</h2>
-<br>
-
-<div *ngFor="let cartItem of cart" >
+  <h2>Cart Items</h2>
   <br>
-  <span>
-    {{cartItem.name}} : {{cartItem.price}}
-     </span>
+
+
+  <div *ngFor="let cartItem of cart" >
     <br>
+    <div>
+      {{cartItem.name}} : {{cartItem.price}}
+    </div>
+    <br>
+  </div>
+  <br>
+  <div> Total Price: Rs {{totalPrice}} </div>
 </div>
-<br>
- <div> Total Price: Rs {{totalPrice}} </div>
+  <button (click)="printComponent('cartInfo')">Print</button>
+  <br>
 
-<button (click)="printComponent('component1')">Print</button>
-<br>
-
-
-<div>
-<button onclick="deleteItems()">Should wite Delete items code here</button>
-<br>
-</div>
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+  <button (click)="emptyCart()">Clear Cart</button>
+  <br>

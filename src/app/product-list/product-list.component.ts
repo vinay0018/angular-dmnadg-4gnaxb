@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
   cart: any = [];
   totalPrice: number = 0;
   products: any = [];
-  
+
 
   constructor(private service: ProductService) {
   }
@@ -39,9 +39,11 @@ export class ProductListComponent implements OnInit {
      document.body.innerHTML = printContents;
      window.print();
      document.body.innerHTML = originalContents;
-}
+  }
 
-
+  emptyCart() {
+    this.cart=[];
+  }
 //  deleteItems() {
 //   localStorage.clear(this.totalPrice);
 //  }
