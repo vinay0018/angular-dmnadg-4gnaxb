@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map, finalize} from 'rxjs/operators';
 
 @Injectable()
 export class ProductService {
   constructor(private httpClient: HttpClient) {}
 
-  getProductList() {
-    this.httpClient.get('src/app/assets/products.json');
+  getProductList(): Observable<any> {
+    return this.httpClient.get<any>('src/assets/products.json');
   }
 }
