@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ProductService } from './product-service.service';
 
 @Component({
   selector: 'app-product-list',
@@ -10,37 +10,17 @@ import { HttpClient } from '@angular/common/http';
 export class ProductListComponent implements OnInit {
   cart: any = [];
   totalPrice: number = 0;
-  products: any = [
-    {
-      name: "IR Item 1",
-      price: 125
-    },
-    {
-      name: "IR Item 2",
-      price: 250
-    },
-    {
-      name: "IR Item 3",
-      price: 350
-    }
-  ];
+  products: any = [];
 
-  constructor(private httpClient: HttpClient) {
-    // this.getProductData();
+  constructor(service: ProductService) {
   }
 
 
 
   ngOnInit() {
-    // this.getProductData().toPromise().then(result => {
-    //   console.log(result);
-    //   this.products = result;
-    // });
-  }
-
-  getProductData() {
-    // console.log('fetch products');
-    //   return this.httpClient.get('assets/product.json');
+    this.service.getProductList().toPromise().then(res => {
+      this.products = res;
+    });
   }
 
   addIntoCart(product: any) {
