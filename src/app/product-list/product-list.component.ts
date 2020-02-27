@@ -12,12 +12,13 @@ export class ProductListComponent implements OnInit {
   cart: any = [];
   totalPrice: number = 0;
   products: any = [];
+  
 
   constructor(private service: ProductService) {
   }
 
   ngOnInit() {
-    this.service.getProductList().toPromise().then(res => {
+    this.service.getProductList().subscribe(res => {
       console.log(res);
       this.products = res;
     });
