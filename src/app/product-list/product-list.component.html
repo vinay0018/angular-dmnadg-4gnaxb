@@ -3,8 +3,18 @@
 <h2>Products</h2>
 <div *ngFor="let product of products">
 
-      {{ product.name }}: Rs {{ product.price }}
-       
+  <span>
+      <a [title]="product.name + 'details'">
+      {{ product.name }}
+      </a>
+  </span>
+
+  <span> 
+      <a [title]="product.price + 'Rs'">
+        {{ product.price }}
+        </a>
+  </span>
+
   <div>
     <button (click)="addIntoCart(product)">
       Add Item
@@ -17,44 +27,38 @@
   </app-product-alerts>
 <br>
 </div>
-<br>
+<br><br>
 
 
 <div id="cartInfo">
-  <div class="b">
+ <div>
       SREE ENTERPRISES<br>
       L5 Food Court, L&T MALL<br>
       MOOSARAMBAGH,HYDERABAD-500036<br>
       Ph No: +91-9030957956<br>
-      GST*:_ 36DVUPK1405D1ZN 
-   </div>
-   <hr>
-      <h2>
-        <p class="alignleft"> ItemName</p>
-        <p class="alignright">Price</p>
-        <hr>
-        <div style="clear: both;"></div>
-      </h2><hr>
-      <div *ngFor="let cartItem of cart" >
+      GST*:_ 36DVUPK1405D1ZN<br>
+      <hr>
+    </div>
+    <h2>
+      <p class="alignleft"> ItemName</p>
+      <p class="alignright">Price</p>
+      <hr>
+      <div style="clear: both;"></div>
+      </h2>
+    <div *ngFor="let cartItem of cart" >
      <br>
       <div>
       <p class="alignleft"> {{cartItem.name}}</p>
       <p class="alignright">Rs {{cartItem.price}}</p>
       <div style="clear: both;"></div>
-      </div>
     </div>
-      <br>
-      <hr>
-  <div>
-      <p class="alignleft"> Total Price</p>
-      <p class="alignright">Rs {{totalPrice}}</p>
-      <div style="clear: both;"></div>
- </div>
-    <hr>
-  <div class="b">
-     Thankyou<br>
-      Please Visit Again!!
   </div>
+ <br>
+   
+<div> Total Price: Rs {{totalPrice}} </div>
+<hr>
+-----------Thankyou-------------<br>
+--------Please Visit Again---------
 </div>
   <button (click)="printComponent('cartInfo')">Print</button>
   <br>
