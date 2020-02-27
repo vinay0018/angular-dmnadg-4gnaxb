@@ -8,7 +8,6 @@ export class ProductService {
   constructor(private httpClient: HttpClient) {}
 
   getProductList(): Observable<any> {
-    const httpHeaders = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.httpClient.get<any>('../../assets/products.json', {headers: httpHeaders });
+    return this.httpClient.get<any>('../../assets/products.json');
   }
 }
