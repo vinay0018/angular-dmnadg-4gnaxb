@@ -31,7 +31,7 @@
 
 
 <div id="cartInfo">
- <div>
+ <div align="center">
       SREE ENTERPRISES<br>
       L5 Food Court, L&T MALL<br>
       MOOSARAMBAGH,HYDERABAD-500036<br>
@@ -54,15 +54,19 @@
     </div>
   </div>
  <br>
-   
-<div> Total Price: Rs {{totalPrice}} </div>
+   <hr>
+<div>  <p class="alignleft"> Total Price:</p>
+      <p class="alignright">Rs  {{totalPrice}}</p>
+      <div style="clear: both;"></div>
+    </div>
 <hr>
------------Thankyou-------------<br>
---------Please Visit Again---------
+<div align="center">
+Thankyou<br>
+Please Visit Again
 </div>
-  <button (click)="printComponent('cartInfo')">Print</button>
-  <br>
-
+</div>
+  <button  style="margin:55px;" (click)="printComponent('cartInfo')">Print</button>
+  
   <button (click)="emptyCart()">Clear Cart</button>
   <br>
 
