@@ -1,14 +1,222 @@
 [
-  {
-    "name": "Vanilla Roll",
-    "price": 160
-  },
-  {
-    "name": "Chocolate Roll",
-    "price": 175
-  },
-  {
-    "name": "Strawberry Roll",
-    "price": 175
-  }
+  
+  
+        {
+            "name": "ICR_Guava Chilli",
+            "price": 125
+        },
+        {
+            "name": "ICR_Oreo Overload",
+            "price": 125
+        },
+        {
+            "name": "ICR_Banana Nutella",
+            "price": 125
+        },
+        {
+            "name": "ICR_Choco Chip Cookie Dough",
+            "price": 125
+        },
+        {
+            "name": "ICR_Cheese Pineapple Cherry",
+            "price": 125
+        },
+        {
+            "name": "ICR_Brownie Bomb",
+            "price": 125
+        },
+        {
+            "name": "ICR_Snicker Roll",
+            "price": 125
+        },
+        {
+            "name": "ICR_Gummyt Bear",
+            "price": 125
+        },
+        {
+            "name": "ICR_Dryfruit Kesari Twist",
+            "price": 125
+        },
+        {
+            "name": "ICR_Butterscotch Caramwl Popcorn",
+            "price": 125
+        },
+        {
+            "name": "ICR_Banana Caramel",
+            "price": 125
+        },
+        {
+            "name": "ICR_Rolled Coffee",
+            "price": 125
+        },
+        {
+            "name": "ICR_Paan Magic",
+            "price": 125
+        },
+        {
+            "name": "ICR_Blueberry Twist",
+            "price": 125
+        },
+        {
+            "name": "ICR_Chocolate paan",
+            "price": 125
+        },
+        {
+            "name": "ICR_Fruit & Nut",
+            "price": 125
+        },
+        {
+            "name": "ICR_Gems",
+            "price": 125
+        },
+        {
+            "name": "ICR_Green Apple",
+            "price": 125
+        },
+        {
+            "name": "ICR_White Rose Lychee",
+            "price": 125
+        },
+        {
+            "name": "ICR_Crunchy Orange",
+            "price": 125
+        },
+        {
+            "name": "ICR_Pinacoloda",
+            "price": 125
+        },
+        {
+            "name": "ICR_Strawberry Cheese",
+            "price": 125
+        },
+        {
+            "name": "ICR_Rose Gulkhand",
+            "price": 125
+        },
+        {
+            "name": "GP_Flourless Chocolate cake",
+            "price": 180
+        },
+        {
+            "name": "GP_Choco Lava Therapy",
+            "price": 170
+        },
+        {
+            "name": "GP_Devil's Chocolate",
+            "price": 180
+        },
+        {
+            "name": "GP_Mango Madness",
+            "price": 150
+        },
+        {
+            "name": "GP_Lychee Rush",
+            "price": 150
+        },
+        {
+            "name": "GP_Wonka's Toffee",
+            "price": 170
+        },
+        {
+            "name": "GP_Coconut Delight",
+            "price": 170
+        },
+        {
+            "name": "GP_Irish Coffee Love",
+            "price": 170
+        },
+        {
+            "name": "GP_Strawberry Paradise",
+            "price": 170
+        },
+        {
+            "name": "GP_Roll Over's Chocolate Karma",
+            "price": 275
+        },
+        {
+            "name": "GP_Roll Over's Skillet Cake",
+            "price": 275
+        },
+        {
+            "name": "JD_Mississippi Mud",
+            "price": 160
+        },
+        {
+            "name": "JD_Double Chocolate Mousse",
+            "price": 150
+        },
+        {
+            "name": "JD_Strawberry Red Velvet",
+            "price": 140
+        },
+        {
+            "name": "JD_Caramello",
+            "price": 140
+        },
+        {
+            "name": "JD_Nutella Cheese",
+            "price": 160
+        },
+        {
+            "name": "ES_Hot Chocolate Fudge",
+            "price": 125
+        },
+        {
+            "name": "ES_HCF Kiddo",
+            "price": 70
+        },
+        {
+            "name": "ES_Death By Chocolate",
+            "price": 225
+        },
+        {
+            "name": "ES_Soft Cake Fudge",
+            "price": 150
+        },
+        {
+            "name": "ES_Brownie Surprise",
+            "price": 160
+        },
+        {
+            "name": "ES_English Tosca",
+            "price": 160
+        },
+        {
+            "name": "ES_Smoor Sundae",
+            "price": 150
+        },
+        {
+            "name": "ES_Lychee Twist",
+            "price": 150
+        },
+        {
+            "name": "ES_Nutty Kulfi",
+            "price": 160
+        },
+        {
+            "name": "ES_Peacho Man",
+            "price": 160
+        },
+        {
+            "name": "ES_Oh My Fig",
+            "price": 160
+        },
+        {
+            "name": "ES_Banana Bread Nutella",
+            "price": 160
+        },
+        {
+            "name": "ES_Butterscotch Sin",
+            "price": 160
+        },
+        {
+            "name": "ES_Chocolate Nut Sundae",
+            "price": 160
+        },
+        {
+            "name": "ES_Apple Pie Sundae",
+            "price": 175
+        }
+    
+
 ]
