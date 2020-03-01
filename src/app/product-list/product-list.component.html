@@ -25,6 +25,7 @@
         <title>Receipt example</title>
     </head>
     <body>
+		<div id="cartInfo">
         <div class="ticket">
                 <p class="centered">SREE ENTERPRISES<br>
                       L5 Food Court, L&T MALL<br>
@@ -54,8 +55,19 @@
             </table>
             <p class="centered">Thanks for your purchase!
                 <br>Please visit again</p>
-        </div>
-        <button id="btnPrint" class="hidden-print">Print</button>
-        <script src="script.js"></script>
+        
+
+             <button  (click)="printComponent('cartInfo')">Print</button>
+       
+         <button style="margin:5px;" (click)="emptyCart()">Clear Cart</button>
+         </div>
+		 </div>
     </body>
 </html>
+
+
+
+
+
+
+
