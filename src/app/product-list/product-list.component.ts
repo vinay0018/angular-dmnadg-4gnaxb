@@ -44,6 +44,7 @@ export class ProductListComponent implements OnInit {
   emptyCart() {
     this.cart=[];
     this.totalPrice=0;
+    sessionStorage.empty();
   }
 //  deleteItems() {
 //   localStorage.clear(this.totalPrice);
