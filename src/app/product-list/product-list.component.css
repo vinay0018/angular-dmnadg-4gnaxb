@@ -31,16 +31,11 @@ table {
 
 td.ItemName,
 th.ItemName {
-    width: 75px;
-    max-width: 75px;
+    width: 140px;
+    max-width: 140px;
 }
 
-td.quantity,
-th.quantity {
-    width: 40px;
-    max-width: 40px;
-    word-break: break-all;
-}
+
 
 td.price,
 th.price {
