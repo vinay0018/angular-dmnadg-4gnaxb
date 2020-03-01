@@ -32,7 +32,7 @@
                      MOOSARAMBAGH,HYDERABAD-500036<br>
                      Ph No: +91-9030957956<br>
                      GST*:_ 36DVUPK1405D1ZN</p>
-                     <hr>
+                     
             <table>
                 <thead>
                     <tr>
@@ -42,6 +42,7 @@
                     </tr>
                     <hr>
                 </thead>
+                
                 <tbody>
                  
                     <tr *ngFor="let cartItem of cart">
@@ -63,9 +64,9 @@
                 <br>Please visit again</div>
         
 
-             <button (click)="printComponent('cartInfo')">Print</button>
+             <button id="printPageButton" (click)="printComponent('cartInfo')">Print</button>
        
-         <button style="margin:5px;" (click)="emptyCart()">Clear Cart</button>
+         <button id="printPageButton" style="margin:5px;" (click)="emptyCart()">Clear Cart</button>
          </div>
 		 </div>
     </body>
