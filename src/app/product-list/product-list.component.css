@@ -25,7 +25,7 @@ td,
 th,
 tr,
 table {
-    border-top: 1px solid black;
+    
     border-collapse: collapse;
 }
 
@@ -37,10 +37,11 @@ th.ItemName {
 
 
 
+
 td.price,
 th.price {
-    width: 40px;
-    max-width: 40px;
+    width: 50px;
+    max-width: 50px;
     word-break: break-all;
 }
 

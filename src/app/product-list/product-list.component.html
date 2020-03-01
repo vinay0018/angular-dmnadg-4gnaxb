@@ -35,29 +35,35 @@
             <table>
                 <thead>
                     <tr>
-                       
                         <th class="ItemName">ItemName</th>
                         <th class="price">Price</th>
+                                               
+                        
                     </tr>
+                    <hr>
                 </thead>
                 <tbody>
-                 <div *ngFor="let cartItem of cart" >
-                    <tr>
-                        <td class="ItemName">{{cartItem.name}}</td>
+                 
+                    <tr *ngFor="let cartItem of cart">
+                      
+                        <td class="ItemName">  {{cartItem.name}}</td>
                         <td class="price">Rs {{cartItem.price}}</td>
                     </tr>
-                   </div>
-                    <tr>                        
+                    <hr>
+                   
+                    <tr> 
+                                             
                         <td class="ItemName">TOTAL</td>
                         <td class="price">Rs  {{totalPrice}}</td>
                     </tr>
                 </tbody>
             </table>
-            <p class="centered">Thanks for your purchase!
-                <br>Please visit again</p>
+            <hr>
+            <div class="centered">Thanks for your purchase!
+                <br>Please visit again</div>
         
 
-             <button  (click)="printComponent('cartInfo')">Print</button>
+             <button (click)="printComponent('cartInfo')">Print</button>
        
          <button style="margin:5px;" (click)="emptyCart()">Clear Cart</button>
          </div>
