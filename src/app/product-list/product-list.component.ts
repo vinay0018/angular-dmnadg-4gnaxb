@@ -12,8 +12,9 @@ export class ProductListComponent implements OnInit {
   cart: any = [];
   totalPrice: number = 0;
   products: any = [];
-
-
+  IceCreamRolls: any = [];
+  GourmetPlates: any = [];
+  ExoticSandaes: any = [];
   constructor(private service: ProductService) {
   }
 
@@ -21,6 +22,9 @@ export class ProductListComponent implements OnInit {
     this.service.getProductList().subscribe(res => {
       console.log(res);
       this.products = res;
+      this.IceCreamRolls = this.products.slice(0, 20);
+      this.GourmetPlates = this.products.slice(10, 20);
+      this.ExoticSandaes = this.products.slice(20, 30);
     });
   }
 

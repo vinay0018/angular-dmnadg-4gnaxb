@@ -1,20 +1,42 @@
 
 
 <h2>Products</h2>
-<div *ngFor="let product of products">
 
-  <div>
-    <button (click)="addIntoCart(product)">
-      {{ product.name }}:{{ product.price }}
-    </button>
-  </div>
 
-  <app-product-alerts
-    [product]="product" 
-    (notify)="onNotify()">
-  </app-product-alerts><br>
-</div>
-<br><br>
+  <table class="table table-striped">
+      <tbody>
+      <tr>
+      <td *ngFor="let product of IceCreamRolls">
+        
+       <button class="button2" (click)="addIntoCart(product)">
+       {{ product.name }}:{{ product.price }}
+       </button></td> </tr>
+    </tbody>
+  </table>
+
+
+
+  <table class="table table-striped">
+      <tbody>
+      <tr>
+      <td *ngFor="let product of GourmetPlates">
+     
+       <button class="button3" (click)="addIntoCart(product)">
+       {{ product.name }}:{{ product.price }}
+       </button></td> </tr>
+    </tbody>
+  </table>
+  
+  <table class="table table-striped">
+      <tbody>
+      <tr>
+      <td  *ngFor="let product of ExoticSandaes">
+  
+       <button class="button4" (click)="addIntoCart(product)">
+       {{ product.name }}:{{ product.price }}
+       </button></td> </tr>
+    </tbody>
+  </table>
 
 <html lang="en">
     <head>
